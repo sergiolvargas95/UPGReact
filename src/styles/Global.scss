@@ -1,0 +1,14 @@
+$font-theme: sans-serif;
+$primary-color: #ADD137;
+$secondary-color: #1CB5F6;
+$clear-color: #E0EEFF;
+$variation-color: #9BD0D1;
+$background-color: #E5E5E5;
+$live-button-color: #F54B4B;
+
+%flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

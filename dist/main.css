@@ -1,0 +1,4 @@
+.Navbar,.Navbar ul,.Navbar__live{display:flex;justify-content:center;align-items:center}.Navbar{width:100%;height:60px;padding:10px;font-family:sans-serif;font-weight:600;background-color:#1CB5F6;justify-content:space-around}.Navbar ul{width:50%;font-size:0.7rem;list-style:none;justify-content:space-around}.Navbar ul a{color:#E0EEFF;text-decoration:none}.Navbar__live{width:80px;height:30px;text-decoration:none;color:#E0EEFF;background-color:#F54B4B;border-radius:10px}
+
+*{box-sizing:border-box;margin:0;padding:0}body{font-size:62.5%;background-color:#E5E5E5}
+
