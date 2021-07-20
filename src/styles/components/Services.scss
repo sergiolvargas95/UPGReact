@@ -1,0 +1,35 @@
+@import '../Global.scss';
+
+.Services {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(180deg, rgba(28, 181, 247, 0.56) 0%, rgba(28, 181, 247, 0.12) 13.54%, rgba(28, 181, 247, 0) 52.6%, rgba(28, 181, 247, 0.12) 86.98%, rgba(28, 181, 247, 0.56) 100%);
+    @extend %flex-box;
+    flex-direction: column;
+    &__Title {
+        color: $secondary-color;
+        text-shadow: $shadow;
+        font-weight: 900;
+        font-size: 1.5rem ;
+    }
+    &__schedule {
+        height: 230px;
+        width: 100%;
+        @extend %flex-box;
+        justify-content: space-around;
+    }
+}
+
+.Service__schedule-description {
+    @extend %flex-box;
+    width: 347px;
+    flex-direction: column;
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

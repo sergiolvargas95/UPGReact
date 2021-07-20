@@ -6,7 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: 'main.js',
+        assetModuleFilename: 'assets/images/[hash][ext][query]'
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -40,6 +41,32 @@ module.exports = {
                 generator: {
                     filename: 'assets/images/[hash][ext][query]',
                 },
+            },
+            {
+                test: /\.mp4$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "video"
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(woff|woff2)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 10000,
+                        mimetype: "application/font-woff",
+                        name: '[name].[ext]',
+                        outputPath: "./assets/fonts",
+                        publicPath: "./assets/fonts",
+                        esModule: false,
+                    }
+                }
             }
         ]
     },

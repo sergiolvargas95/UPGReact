@@ -1,10 +1,22 @@
-$font-theme: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/*@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/roboto-regular.woff2') format('woff2'),
+        url('../assets/fonts/roboto-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+$font-theme:  'Roboto', sans-serif;
 $primary-color: #ADD137;
 $secondary-color: #1CB5F6;
 $clear-color: #E0EEFF;
 $variation-color: #9BD0D1;
 $background-color: #E5E5E5;
 $live-button-color: #F54B4B;
+$shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+$shadow_2: 0px 4px 4px rgba(0, 0, 0, 0.5);
 
 %flex-box {
     display: flex;

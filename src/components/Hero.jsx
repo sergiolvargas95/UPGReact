@@ -3,9 +3,9 @@ import HeroImage from '../assets/images/Hero.png';
 import '../styles/components/Hero.scss';
 
 const Hero = () => (
-    <React.Fragment>
-        <img className="Hero" src={HeroImage} alt="Image Hero" />
-    </React.Fragment>
+    <div className="Hero">
+        <img className="Hero-image" src={HeroImage} alt="Image Hero" />
+    </div>
 );
 
 export default Hero;

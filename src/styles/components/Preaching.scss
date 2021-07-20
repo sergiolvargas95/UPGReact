@@ -1,0 +1,33 @@
+@import '../Global.scss';
+
+.Preaching {
+    width: 100%;
+    height: 80vh;
+    @extend %flex-box;
+    flex-direction: column;
+    h3 {
+        color: $primary-color;
+        font-size: 1.5rem;
+    }
+    &__videos {
+        width: 100%;
+        height: 400px;
+        @extend %flex-box;
+        justify-content: space-around;
+    }
+    &__button {
+        width: 240px;
+        height: 59px;
+        color: $clear-color;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 15px;
+        font-weight: 500;
+        font-style: bold;
+        font-size: 0.8rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
