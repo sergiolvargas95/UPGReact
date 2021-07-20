@@ -5,7 +5,9 @@ import Welcome from '../components/Welcome';
 import Services from '../components/Services';
 import Preaching from '../components/Preaching';
 import Information from '../components/Information';
-import Map from '../components/Map';
+import MapView from '../components/MapView';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Home = () => (
     <React.Fragment>
@@ -15,6 +17,9 @@ const Home = () => (
         <Services />
         <Preaching />
         <Information />
+        <MapView />
+        <Contact />
+        <Footer />
     </React.Fragment>
 );
 

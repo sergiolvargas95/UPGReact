@@ -1,0 +1,8 @@
+@import '../Global.scss';
+
+.Footer {
+    width: 100%;
+    height: 30px;
+    background-color: $primary-color;
+    @extend %flex-box;
+}

@@ -22,8 +22,9 @@
         @extend %flex-box;
         justify-content: space-around;
         a {
-            color: $clear-color;
+            color: white;
             text-decoration: none;
+            cursor: pointer;
         }
     }
     &__live {
