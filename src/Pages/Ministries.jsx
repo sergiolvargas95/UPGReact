@@ -1,5 +1,6 @@
 import React from 'react';
 import MiniHero from '../components/MiniHero';
+import MinisteriesSection from '../components/MinisteriesSection';
 import MinisteriesImg from '../assets/images/Ministeries.png';
 
 
@@ -10,6 +11,7 @@ const Ministeries = () => {
                 HeroImg={MinisteriesImg}
                 Title="Ministerios"
             />
+            <MinisteriesSection />
         </React.Fragment>
     )
 }

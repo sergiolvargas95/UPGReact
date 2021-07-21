@@ -1,15 +1,18 @@
 @import '../Global.scss';
 
 .Purposes {
-    width: 100%;
+    width: 80%;
     height: 550px;
     @extend %flex-box;
     flex-direction: column;
+    margin: 0 auto;
+
     &__Title {
         font-size: 2rem;
         color: $secondary-color;
         border-bottom: 5px solid $primary-color ;
         padding: 0 40px;
+        text-shadow: $shadow;
     }
     &__Container {
         width: 100%;
