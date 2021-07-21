@@ -21,7 +21,18 @@
         list-style: none;
         @extend %flex-box;
         justify-content: space-around;
+        li {
+            height: 60px;
+            width: 150px;
+            @extend %flex-box;
+            &:hover {
+                transition-duration: 1s;
+                background-color: $hover-color;
+            }
+        }
         a {
+            @extend %flex-box;
+            width: 150px;
             color: white;
             text-decoration: none;
             cursor: pointer;

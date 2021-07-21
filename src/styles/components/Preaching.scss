@@ -8,6 +8,7 @@
     h3 {
         color: $primary-color;
         font-size: 1.5rem;
+        text-shadow: $shadow;
     }
     &__videos {
         width: 100%;
@@ -27,7 +28,7 @@
         font-size: 0.8rem;
         cursor: pointer;
         &:hover {
-            background-color: $primary-color;
+            background-color: $hover-color;
         }
     }
 }

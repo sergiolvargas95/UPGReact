@@ -1,0 +1,19 @@
+@import '../Global.scss';
+
+.MiniHero {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    @extend %flex-box;
+    &__Img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+    &__Title {
+        color: white;
+        font-size: 2rem;
+    }
+}
