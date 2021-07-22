@@ -1,16 +1,17 @@
 @import '../Global.scss';
 
 .MinisteriesSection {
-    width: 100%;
+    width: 80%;
     height: 20%;
-    padding: 50px;
+    margin: 0 auto;
+    padding: 30px;
     @extend %flex-box;
+    padding: 20px 150px;
     &__img {
         height: 180px;
         width: 180px;
         object-fit: cover;
         border-radius: 50%;
-        border: 2px solid $primary-color;
     }
     &__container {
         @extend %flex-box;
@@ -20,7 +21,38 @@
         }
         &-description {
             font-size: 0.8rem;
-            padding: 30px;
+            padding-top: 15px;
         }
     }
 }
+
+/*.animadoDer, .animadoIzq {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacionDer {
+    animation:mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animacionIzq {
+    animation:mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda {
+    0% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/

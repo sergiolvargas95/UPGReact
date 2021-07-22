@@ -1,0 +1,9 @@
+@import './Global.scss';
+
+.ServicesSection {
+    width: 100%;
+    height: auto;
+    @extend %flex-box;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
