@@ -1,0 +1,39 @@
+@import '../Global.scss';
+
+.Form {
+    width: 70%;
+    height: 700px;
+    margin: 20px auto;
+    background-color: #E0EEFF;
+    @extend %flex-box;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    input, textarea {
+        width: 95%;
+        height: 50px;
+        background: #AEE7FF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 15px;
+        outline: none;
+        color: #423C3C;
+        margin:20px;
+    }
+    textarea {
+        height: 350px;
+        justify-content: start;
+        font-family: $font-theme;
+    }
+    button {
+        background: #1CB5F6;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 15px;
+        color: #FFFFFF;
+        width: 200px;
+        height: 45px;
+        font-weight: bold;
+    }
+}

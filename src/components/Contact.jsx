@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/components/Contact.scss';
 
@@ -21,10 +22,10 @@ const Contact = () => (
             </a>
         </div>
         <div className="Contact__container">
-        <a href="" className="Contact__Button">
+        <Link to="/Contactanos" className="Contact__Button">
                 <img src={Pray} alt="" />
                 <span className="Contact__Name">PETICIÓN DE ORACIÓN</span>
-            </a>
+            </Link>
         </div>
     </div>
 );

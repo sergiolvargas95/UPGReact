@@ -7,6 +7,7 @@ import Services from '../Pages/Services';
 import Quote from '../Pages/Quote';
 import Contact from '../Pages/Contact'
 import Layout from '../components/Layout';
+import ErrorFound from '../components/ErrorFound';
 
 
 import '../styles/App.scss';
@@ -21,6 +22,7 @@ const App = () => (
                 <Route exact path="/servicios" component={Services} />
                 <Route excat path="/citadeldia" component={Quote} />
                 <Route exact path="/Contactanos" component={Contact} />
+                <Route component={ErrorFound} />
             </Switch>
         </Layout>
     </BrowserRouter>

@@ -1,0 +1,41 @@
+@import '../Global.scss';
+
+.Error {
+    overflow-y:hidden;
+    width: 100%;
+    height: 66.7vh;
+    @extend %flex-box;
+    flex-direction: row;
+    background-color:#E0EEFF;
+    img {
+        width: 70%;
+        height: 99%;
+        object-fit: cover;
+    }
+    &__text {
+        width: 30%;
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        button {
+            margin: 15px;
+            background: #1CB5F6;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            border-radius: 15px;
+            width: 200px;
+            height: 50px;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            &:hover {
+                background-color: $hover-color ;
+                cursor: pointer;
+            }
+        }
+    }
+}
