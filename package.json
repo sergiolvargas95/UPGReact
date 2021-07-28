@@ -12,6 +12,8 @@
   "author": "Sergio Vargas <sergiolvargas95@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@formspree/react": "^2.2.3",
+    "axios": "^0.21.1",
     "firebase": "^8.8.0",
     "leaflet": "^1.7.1",
     "react": "^17.0.2",
