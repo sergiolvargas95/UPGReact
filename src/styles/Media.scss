@@ -25,7 +25,6 @@
     }
     .Information {
         text-align: center;
-        
         h2 {
             font-size: 1.7rem;
             height: 150px;
@@ -34,6 +33,53 @@
             width: 85%;
             font-size: 1.1rem;
             text-align: center;
+        }
+    }
+
+    .MiniHero {
+        height: 500px;
+        &__Img {
+            height: 500px;
+        }
+    }
+
+    .Purposes {
+    padding: 20px;
+        &__Title {
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .Purposes__container-description {
+        margin-top: 40px;
+        padding: 0;
+        h4 {
+            font-size: 1.5rem;
+        }
+        p {
+            width: 100%;
+            padding: 30px 0;
+        }
+    }
+    .Pastors {
+        width: 100%;
+        height: auto;
+        //justify-content: space-around;
+        &__Img {
+            justify-content: center;
+            &-pic {
+                margin: 0;
+            }
+        }
+        &__Container {
+            padding: 0;
+            margin-top: 30px;
+            &-Title {
+                text-align: center;
+            }
+            &-description {
+
+            }
         }
     }
 }
