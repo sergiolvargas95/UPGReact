@@ -1,0 +1,41 @@
+@media only screen and (max-width: 600px) {
+    .Welcome {
+        padding: 20px;
+        .Title {
+            text-align: center;
+            h1 {
+                padding-top: 40px;
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .Services {
+        text-align: center;
+        &__schedule {
+            padding: 20px;
+        }
+    }
+
+    .Service__schedule-description {
+        padding: 30px;
+    }
+    .Information {
+        text-align: center;
+        
+        h2 {
+            font-size: 1.7rem;
+            height: 150px;
+        }
+        p {
+            width: 85%;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+}
+
+
