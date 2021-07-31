@@ -6,7 +6,7 @@ import '../styles/components/Navbar.scss';
 
 const DesktopNav = () => {
     return (
-        <nav className="Navbar">
+        <nav className="Navbar Desktop">
             <a href="/"><img src={Logo} alt="Logo"/></a>
                 <ul>
                     <NavLinks />

@@ -30,17 +30,20 @@
     &__button {
         width: 240px;
         height: 59px;
-        color: $clear-color;
         background-color: $secondary-color;
         border: none;
         border-radius: 15px;
-        font-weight: 500;
-        font-style: bold;
-        font-size: 0.8rem;
         cursor: pointer;
         margin: 40px;
         &:hover {
             background-color: $hover-color;
+        }
+        a {
+            text-decoration: none;
+            color: $clear-color;
+            font-weight: 500;
+            font-style: bold;
+            font-size: 0.8rem;
         }
     }
 }

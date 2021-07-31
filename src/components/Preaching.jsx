@@ -30,7 +30,7 @@ const Preaching = () => (
                         />
                 </div>
                 </div>
-                <button className="Preaching__button">MÁS PREDICAS</button>
+                <button className="Preaching__button"><a target="_blank" rel="noopener" href="https://youtube.com/playlist?list=PLs-J-6QZHJ4Mg2wpTpS3ExQFJOhzVbfZ_">MÁS PREDICAS</a></button>
         </div>
 );
 

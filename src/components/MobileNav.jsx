@@ -10,13 +10,13 @@ const MobileNav = () => {
     const [open, setOpen] = useState(false);
     const HamburgerIcon = <TiThMenu className="MenuHamburger" onClick={() => setOpen(!open)} size="40px" color="white" />
     const closeIcon = <IoMdCloseCircleOutline className="MenuClose" onClick={() => setOpen(!open)} size="40px" color="white" />
-    const closeMobile = () => setOpen(false)
+    const closeMobileMenu = () => setOpen(false)
     return (
-        <nav className="Navbar">
+        <nav className="Navbar Mobile">
             <a href="/"><img src={Logo} alt="Logo"/></a>
             {open ? closeIcon : HamburgerIcon}
                 {open && <ul>
-                    <NavLinks />
+                    <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>
                 </ul>
             }
             <a className="Navbar__live" href="#">LIVE</a>

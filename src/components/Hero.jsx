@@ -1,10 +1,12 @@
 import React from 'react';
-import HeroImage from '../assets/images/Hero.png';
+import HeroDesk from './HeroDesktop';
+import HeroMobile from './HeroMobile';
 import '../styles/components/Hero.scss';
 
 const Hero = () => (
     <div className="Hero">
-        <img className="Hero-image" src={HeroImage} alt="Image Hero" />
+        <HeroDesk />
+        <HeroMobile />
     </div>
 );
 

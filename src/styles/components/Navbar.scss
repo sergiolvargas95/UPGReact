@@ -1,5 +1,9 @@
 @import '../Global.scss';
 
+.Mobile {
+    display: none;
+}
+
 .Navbar {
     z-index: 999;
     position: fixed;
@@ -17,26 +21,33 @@
         height: 45px;
     }
     ul {
-        width: 50%;
+        width: 70%;
         font-size: 0.7rem;
         list-style: none;
         @extend %flex-box;
         justify-content: space-around;
-        li {
-            height: 60px;
-            width: 150px;
+        .List {
+            width: 100%;
+            height: 100%;
             @extend %flex-box;
-            &:hover {
-                transition-duration: 1s;
-                background-color: $hover-color;
+            justify-content: space-around;
+            li {
+                height: 60px;
+                width: 100%;
+                @extend %flex-box;
+                justify-content: space-around;
+                &:hover {
+                    transition-duration: 1s;
+                    background-color: $hover-color;
+                }
+                a {
+                    @extend %flex-box;
+                    width: 150px;
+                    color: white;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
-        }
-        a {
-            @extend %flex-box;
-            width: 150px;
-            color: white;
-            text-decoration: none;
-            cursor: pointer;
         }
     }
     &__live {
@@ -47,8 +58,5 @@
         color: $clear-color;
         background-color: $live-button-color;
         border-radius: 10px;
-    }
-    .MenuHamburger {
-        display: none;
     }
 }

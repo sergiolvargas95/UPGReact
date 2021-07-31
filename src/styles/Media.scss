@@ -165,10 +165,6 @@
     }
 
     .Navbar {
-        justify-content: space-between;
-        bottom: 0;
-        left: 0;
-        position: absolute;
         ul {
             display: flex;
             flex-direction: column;
@@ -194,4 +190,35 @@
             cursor: pointer;
         }
     }
+    .Desktop {
+        display: none;
+    }
+
+    .Mobile {
+        justify-content: space-between;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
+        .List {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .Hero-image {
+        display: none;
+    }
+
+    .Hero-mobile {
+        display: flex;
+        object-fit: contain;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        }
 }
