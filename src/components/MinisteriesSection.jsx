@@ -6,29 +6,22 @@ import '../styles/components/MinisteriesSection.scss';
 const MinisteriesSection = ({ MinisteriesImg, MinisteriesTitle, MinisteriesDesc, bordercolor, izq }) => {
     if(izq) {
         return (
-            <div className="MinisteriesSection animadoDer">
-                <img className="MinisteriesSection__img" src={MinisteriesImg} alt="Ministerio" style={{border:`${bordercolor}`}}/>
-                <div className="MinisteriesSection__container" style={{
-                    paddingRight: `220px`
-                }}>
+            <div className="MinisteriesSection">
+                <img id="RightImg" className="MinisteriesSection__img" src={MinisteriesImg} alt="Ministerio"/>
+                <div id="RightConteiner" className="MinisteriesSection__container">
                     <h4 className="MinisteriesSection__container-Title" >{MinisteriesTitle}</h4>
-                    <p className="MinisteriesSection__container-description"  style={{
-                    paddingLeft: `30px`
-                }}>{MinisteriesDesc}</p>
+                    <p className="MinisteriesSection__container-description"  id="DescriptionLeft">{MinisteriesDesc}</p>
                 </div>
             </div>
     )
     } else {
         return (
-            <div className="MinisteriesSection animadoIzq">
-                <div className="MinisteriesSection__container" style={{
-                    paddingLeft: `220px`}}>
+            <div className="MinisteriesSection">
+                <div className="MinisteriesSection__container" id="LeftCotainer">
                     <h4 className="MinisteriesSection__container-Title" >{MinisteriesTitle}</h4>
-                    <p className="MinisteriesSection__container-description" style={{
-                    paddingRight: `30px`, textAlign:`right`
-                }} >{MinisteriesDesc}</p>
+                    <p className="MinisteriesSection__container-description" id="DescriptionRight" >{MinisteriesDesc}</p>
                 </div>
-                <img className="MinisteriesSection__img" src={MinisteriesImg} alt="Ministerio" style={{border:`${bordercolor}`}}/>
+                <img id="LeftImg" className="MinisteriesSection__img" src={MinisteriesImg} alt="Ministerio" />
             </div>
         )
     }

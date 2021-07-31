@@ -24,6 +24,27 @@
             padding-top: 15px;
         }
     }
+
+    #RightImg {
+        border: 2px solid $primary-color;
+    }
+    #LeftImg {
+        border: 2px solid $secondary-color;
+    }
+    #RightContainer {
+        padding-right: 220px
+    }
+    #LeftContainer {
+        padding-left: 220px
+    }
+    #DescriptionLeft {
+        padding-left: 30px
+    }
+    #DescriptionRight {
+        padding-right: 30px;
+        text-align: right;
+
+    }
 }
 
 /*.animadoDer, .animadoIzq {
